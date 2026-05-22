@@ -1,3 +1,6 @@
 tmp_model/
 models/
 __pycache__/
+NISQA/
+resultados_nisqa/
+outputs/datos_crudos/

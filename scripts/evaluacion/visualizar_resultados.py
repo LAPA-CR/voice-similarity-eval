@@ -14,7 +14,7 @@ classifier = EncoderClassifier.from_hparams(source="speechbrain/spkrec-ecapa-vox
 
 # 2. Buscar todos los audios listos para evaluación (ignoramos los de 24kHz de xtts)
 rutas_audios = glob.glob("data/raw/*.wav")
-rutas_validas = [r for r in rutas_audios if "xtts" not in r]
+rutas_validas = rutas_audios 
 
 if not rutas_validas:
     print("No se encontraron audios válidos en data/raw/")
